@@ -1,0 +1,16 @@
+#First python project, dated 25/03/2024
+answer = int(9)
+guess_chance = int(3)
+i = 0
+
+while i < guess_chance:
+    guess=input("Guess the value: ")
+    if int(guess) == answer:
+        print ("You won!")
+        break
+    else: 
+        i += 1
+        if i == guess_chance:
+            print("You lose!")
+            break
+        print ("Try again!")
